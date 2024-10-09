@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+    android:background="#FAE1D9"
+        tools:context=".ProductDisplay">
+    <LinearLayout
+        android:id="@+id/button_container"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_confirm_order"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#156F0B"
+            android:text="Confirm Order"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*For payment only Cash on Delivery service is available"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:padding="72dp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
